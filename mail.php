@@ -10,7 +10,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $formcontent ="From: $name \n Message: $message";
 $mailheader = "From: $email \r\n";
-
+User-Agent: youmademebracelet
 $retval = (mail($subject, $formcontent, $mailheader) 
 
 	if( $retval == true ) {echo "<p>Thank you!</p>"} 
