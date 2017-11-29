@@ -1,15 +1,22 @@
+<html>
+<head>
+</head>
+<body>
 <?php 
-if(isset($_POST["submit"])) {
 $to= "youmademe17@gmail.com";
+$subject = "One dot";
 $name = $POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $formcontent="From: $name \n Message: $message";
-$subject = "One dot";
 $mailheader = "From: $email \r\n";
-}
-if (mail($subject, $formcontent, $mailheader) {echo "<p>Thank you!</P>"} 
+
+$retval = (mail($subject, $formcontent, $mailheader) 
+
+	if( $retval == true ) {echo "<p>Thank you!</p>"} 
 		else { echo("<p>Something went wrong, please try again.</p>");
 		}
 }
 ?>
+</body>
+</html>
