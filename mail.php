@@ -1,13 +1,13 @@
 <?php 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_REQUEST['name'];
+$email = $_REQUEST['email'];
+$message = $_REQUEST['message'];
 $formcontent="From: $name \n Message: $message";
-$to= "youmademe17@gmail.com";
+$admin_email= "youmademe17@gmail.com";
 $subject = "One dot";
 $mailheader = "From: $email \r\n";
-if ($POST['submit']){
-	if (mail($recipient, $subject, $formcontent, $mailheader, $phone)) {echo 'Thank you!'} 
+if ($REQUEST['submit']){
+	if (mail(($subject, $formcontent, $mailheader)) {echo 'Thank you!'} 
 		else { echo 'Somethign went wrong, please try again.';
 		}
 }
