@@ -3,12 +3,12 @@
 </head>
 <body>
 <?php 
-$to= "youmademe17@gmail.com";
+$to = "youmademe17@gmail.com";
 $subject = "One dot";
-$name = $GET['name'];
-$email = $GET['email'];
-$message = $GET['message'];
-$formcontent="From: $name \n Message: $message";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent ="From: $name \n Message: $message";
 $mailheader = "From: $email \r\n";
 
 $retval = (mail($subject, $formcontent, $mailheader) 
