@@ -5,9 +5,9 @@
 <?php 
 $to= "youmademe17@gmail.com";
 $subject = "One dot";
-$name = $POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = $GET['name'];
+$email = $GET['email'];
+$message = $GET['message'];
 $formcontent="From: $name \n Message: $message";
 $mailheader = "From: $email \r\n";
 
