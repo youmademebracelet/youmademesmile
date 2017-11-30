@@ -33,22 +33,25 @@ button {
 
 h1 {
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 3em;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 0.00em;
-	margin-bottom: 60px;
+	padding: 0;
+
+	margin: 3% 1% 0 3%;
 }
 h2 {
 	text-align: center;
 	font-size: 1.5em;
 	font-family: 'Helvetica', sans-serif;
 	letter-spacing: 0.02em;
+	margin: 0;
+	padding: 0;
 }
 h3 {
 	margin-left: 150px;
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	font-family: 'Helvetica', sans-serif;
 	letter-spacing: 0.02em;
 }
@@ -57,7 +60,8 @@ h4{
 	text-align: left;
 	font-size: 1.3em;
 	font-family: 'Helvetica', sans-serif;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.04em;
+	line-height: 30px;
 
 }
 .formbox {
